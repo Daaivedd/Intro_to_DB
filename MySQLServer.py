@@ -20,8 +20,8 @@ def create_database(host, user, password, database_name):
     )
     mycursor = mydb.cursor()
 
-    mycursor.execute(f"CREATE DATABASE IF NOT EXISTS {database_name}")
-    print(f"Database '{database_name}' created successfully!")
+    mycursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store")
+    print(f"Database alx_book_store created successfully!")
 
   except mysql.connector.Error as err:
     print(f"Failed to create database: {err}")
